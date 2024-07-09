@@ -9,23 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkSair = document.querySelector('.link-sair')
     const formPost = document.querySelector('.form-post')
     const tituloLogin = document.querySelector('.titulo-login')
-    const mensagens = document.querySelector('.mensagens')
+    const mensagens = document.querySelector('.mensagens') 
 
-    //mensagens
-    const logadoSucesso = () =>{
-        mensagens.innerHTML = 'Usuário logado com sucesso.'
+
+    const alertaUsuario = (alerta) =>{
+        mensagens.innerHTML = alerta
     }
 
-    const verifiqueConexao = () =>{
-        mensagens.innerHTML = 'Verifique a sua conexão, email ou senha.'
-    }
-
-    const logoutSucesso = () =>{
-        mensagens.innerHTML = 'Logout realizado com sucesso.'
-    }
-
-    const erroInesperado = () =>{
-        mensagens.innerHTML = 'Ocorreu um erro inesperado.'
+    //Limpar mensagem 
+    const Limparmensagem = () =>{
+        setInterval(()=>{
+            mensagens.innerHTML = ''
+        }, 4000)
     }
 
     // Evento de login
@@ -39,12 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 signInWithEmailAndPassword(auth, email, password)
                     .then((userCredential) => {
                         const user = userCredential.user
-                        logadoSucesso()
+                        alertaUsuario('Usuário logado com sucesso.')
+                        Limparmensagem()
                         emailInput.value = ''
                         senhaInput.value = ''                
                     })
                     .catch(()=> {
-                        verifiqueConexao()
+                        alertaUsuario('Verifique a sua conexão, email ou senha.')
+                        Limparmensagem()
                     })
                         
         })
@@ -54,10 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
         linkSair.addEventListener('click', () =>{
             signOut(auth)
             .then(()=>{
-                logoutSucesso()
+                alertaUsuario('Logout realizado com sucesso.')
+                Limparmensagem()
             })
             .catch(()=>{
-                erroInesperado()
+                alertaUsuario('Ocorreu um erro inesperado.')
+                Limparmensagem()
             })
         })
     }
