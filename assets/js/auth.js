@@ -2,7 +2,7 @@ import { auth } from './firebase.js'
 import { signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    //Declarando as variaveis  
     const emailInput = document.querySelector('.email-admin')
     const senhaInput = document.querySelector('.senha-admin')
     const formLogin = document.querySelector('.form-login')
