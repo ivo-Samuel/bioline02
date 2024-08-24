@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Estio Local -->
   <link rel="stylesheet" href="assets/css/main.css">
+   <!-- Aos animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,11 +24,11 @@
       <img class="logo-hero" src="assets/imagens/imagenprov.jpeg" alt="BioLine">
     </div>
     <div class="redes-sociais col-12 col-md-3 offset-md-3 d-flex justify-content-evenly align-items-center">
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
+      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1000"><a href="#"><i
             class="bi bi-instagram fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
+      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1200"><a href="#"><i
             class="bi bi-twitter fs-4"></i></a></div>
-      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center"><a href="#"><i
+      <div class="hero-icon-redes border rounded-circle d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1400"><a href="#"><i
             class="bi bi-tiktok fs-4"></i></a></div>
     </div>
   </header>
@@ -90,7 +92,7 @@
   <article class="container">
     <h2 class=" mt-5 fw-bold text-center text-success">GLOBALIZANDO A IMPORTÂNCIA ANIMAL E VIVENCIANDO A PROBLEMÁTICA.
     </h2>
-    <div class="decoration-bar"></div>
+    <div class="decoration-bar" data-aos="flip-left" data-aos-duration="2400"></div>
   </article>
   <!--  -->
   <section class="container-fluid p-5">
@@ -115,10 +117,10 @@
     <article class="second-theme">
       <div class="container">
         <h3 class="text-center text-success fw-bold my-5">MAIS UM TÓPICO PARA SER ABORDADO DENTRO DO SITE</h3>
-        <div class="decoration-bar"></div>
+        <div class="decoration-bar" data-aos="flip-left" data-aos-duration="2600"></div>
         <h4 class="text-secondary text-center">Falando sobre (Determinado tema), percebe-se uma falta de senso não só populacional quanto também por parte do governo</h4>
         <div class="row my-5">
-          <div class="card col-12 col-md-6 col-lg-3 rounded-4">
+          <div class="card col-12 col-md-6 col-lg-3 rounded-4" data-aos="zoom-in-right" data-aos-duration="1400">
 
             <div class="card-body">
               <i class="bi bi-diamond fs-1 text-success"></i>
@@ -129,7 +131,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="card col-12 col-md-6 col-lg-3 rounded-4">
+          <div class="card col-12 col-md-6 col-lg-3 rounded-4" data-aos="flip-up" data-aos-duration="1600" data-aos-delay="600">
             <div class="card-body">
               <i class="bi bi-diamond fs-1 text-success"></i>
               <h5 class="card-title my-3 fs-3 text-success">Card title</h5>
@@ -140,7 +142,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="card col-12 col-md-6 col-lg-3 rounded-4">
+          <div class="card col-12 col-md-6 col-lg-3 rounded-4" data-aos="flip-up" data-aos-duration="1800" data-aos-delay="1000">
             <div class="card-body">
               <i class="bi bi-diamond fs-1 text-success"></i>
               <h5 class="card-title my-3 fs-3 text-success">Card title</h5>
@@ -151,7 +153,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="card col-12 col-md-6 col-lg-3 rounded-4">
+          <div class="card col-12 col-md-6 col-lg-3 rounded-4" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="1400">
             <div class="card-body">
               <i class="bi bi-diamond fs-1 text-success"></i>
               <h5 class="card-title my-3 fs-3 text-success">Card title</h5>
@@ -172,7 +174,7 @@
 
       <article class="sobre my-5 container" id="sobre">
         <h3 class="text-center text-success fw-bold my-5">Sobre nós</h3>
-        <div class="decoration-bar"></div>
+        <div data-aos="flip-left" data-aos-duration="2600" class="decoration-bar" data-aos="flip-left" data-aos-duration="2400"></div>
 
         <div class="row mt-5">
 
@@ -222,9 +224,9 @@
   </section>
 
   <footer class="pt-5 text-center">
-    <div class="decoration-bar"></div>
+    <div class="decoration-bar" data-aos="flip-left" data-aos-duration="2600"></div>
     <p>Todos os direitos reservados &copy; BioLine - 2024.</p>
-    <div class="decoration-bar"></div>
+    <div class="decoration-bar" data-aos="flip-left" data-aos-duration="2600"></div>
   </footer>
 
     <!-- Firebase -->
@@ -239,6 +241,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+        <!-- Scripts AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 
 </html>

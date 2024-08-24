@@ -4,14 +4,14 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-storage.js"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCJgqb5d9b9tg0SHepMydGiPXEVZBAOuS0",
-  authDomain: "jujuba-cf4e9.firebaseapp.com",
-  databaseURL: "https://jujuba-cf4e9-default-rtdb.firebaseio.com",
-  projectId: "jujuba-cf4e9",
-  storageBucket: "jujuba-cf4e9.appspot.com",
-  messagingSenderId: "807516463621",
-  appId: "1:807516463621:web:d68dc093b8661d4ba3f26c",
-  measurementId: "G-4M812KH9YJ"
+  apiKey: "AIzaSyCJvukWOuzKvQipmjL85lrwvFPSPQdR4_k",
+  authDomain: "corpo-dbc4a.firebaseapp.com",
+  databaseURL: "https://corpo-dbc4a-default-rtdb.firebaseio.com",
+  projectId: "corpo-dbc4a",
+  storageBucket: "corpo-dbc4a.appspot.com",
+  messagingSenderId: "719510829494",
+  appId: "1:719510829494:web:bdc737c776708afe006917",
+  measurementId: "G-DEP549GZNB"
 };
 
 const app = initializeApp(firebaseConfig);
